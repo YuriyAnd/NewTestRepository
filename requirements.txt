@@ -1,0 +1,13 @@
+pymysql
+robotframework==7.0
+robotframework-assertion-engine==3.0.3
+robotframework-browser==18.1.0
+robotframework-databaselibrary==1.4.3
+robotframework-excellib==2.0.1
+robotframework-jsonvalidator==2.0.0
+robotframework-metrics==3.3.3
+robotframework-pabot==2.18.0
+robotframework-pythonlibcore==4.3.0
+robotframework-requests==0.9.6
+robotframework-stacktrace==0.4.1
+robotframework-tidy==4.9.0
