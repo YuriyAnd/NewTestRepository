@@ -1,0 +1,86 @@
+{"level":30,"time":"2024-05-09T07:50:34.509Z","pid":13500,"hostname":"NB","msg":"Listening on 64042"}
+(node:13500) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-05-09T07:50:35.343Z","pid":13500,"hostname":"NB","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-09T07:50:35.346Z","pid":13500,"hostname":"NB","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-09T07:50:35.488Z","pid":13500,"hostname":"NB","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-09T07:50:35.489Z","pid":13500,"hostname":"NB","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-09T07:50:35.528Z","pid":13500,"hostname":"NB","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-05-09T07:50:39.028Z","pid":13500,"hostname":"NB","msg":"Adding browser to stack: chromium, version: 121.0.6167.57"}
+{"level":30,"time":"2024-05-09T07:50:39.034Z","pid":13500,"hostname":"NB","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-05-09T07:50:39.033Z","pid":13500,"hostname":"NB","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-05-09T07:50:39.063Z","pid":13500,"hostname":"NB","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-05-09T07:50:39.065Z","pid":13500,"hostname":"NB","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-05-09T07:50:39.066Z","pid":13500,"hostname":"NB","msg":"Trace file: "}
+{"level":30,"time":"2024-05-09T07:50:39.273Z","pid":13500,"hostname":"NB","msg":"Changed active context"}
+{"level":30,"time":"2024-05-09T07:50:39.275Z","pid":13500,"hostname":"NB","msg":"End of node method newContext"}
+{"level":30,"time":"2024-05-09T07:50:39.301Z","pid":13500,"hostname":"NB","msg":"Start of node method grantPermissions"}
+{"level":30,"time":"2024-05-09T07:50:39.333Z","pid":13500,"hostname":"NB","msg":"End of node method grantPermissions"}
+{"level":30,"time":"2024-05-09T07:50:39.409Z","pid":13500,"hostname":"NB","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-09T07:50:39.410Z","pid":13500,"hostname":"NB","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-09T07:50:39.449Z","pid":13500,"hostname":"NB","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-05-09T07:50:39.453Z","pid":13500,"hostname":"NB","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-05-09T07:50:41.012Z","pid":13500,"hostname":"NB","msg":"Video path: undefined"}
+{"level":30,"time":"2024-05-09T07:50:41.012Z","pid":13500,"hostname":"NB","msg":"Changed active page"}
+{"level":30,"time":"2024-05-09T07:51:21.091Z","pid":13500,"hostname":"NB","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: Timeout 40000ms exceeded.
+Call log:
+  [2m- navigating to "https://casino.poker-bet1.com/en/", waiting until "load"[22m
+
+    at newPage (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\index.js:10269:18)
+    at async PlaywrightServer.newPage (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\index.js:10605:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2024-05-09T07:51:21.562Z","pid":13500,"hostname":"NB","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\index.js:8609:11)
+    at takeScreenshot (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\index.js:8653:3)
+    at PlaywrightServer.takeScreenshot (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\index.js:10605:34)
+    at Object.onReceiveHalfClose (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-05-09T07:51:21.563Z","pid":13500,"hostname":"NB","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2024-05-09T07:51:21.840Z","pid":13500,"hostname":"NB","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-09T07:51:21.840Z","pid":13500,"hostname":"NB","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-09T07:51:21.866Z","pid":13500,"hostname":"NB","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-05-09T07:51:22.457Z","pid":13500,"hostname":"NB","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\index.js:9965:15)
+    at PlaywrightServer.getActiveBrowser (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\index.js:10590:59)
+    at PlaywrightServer.setTimeout (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\index.js:10840:57)
+    at Object.onReceiveHalfClose (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-05-09T07:51:22.595Z","pid":13500,"hostname":"NB","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-09T07:51:22.595Z","pid":13500,"hostname":"NB","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\index.js:9965:15)
+    at PlaywrightServer.getActiveBrowser (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\index.js:10590:59)
+    at PlaywrightServer.setTimeout (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\index.js:10840:57)
+    at Object.onReceiveHalfClose (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1084:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:516:31)
+    at BaseServerInterceptingCall.handleEndEvent (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:554:14)
+    at ServerHttp2Stream.<anonymous> (E:\Repositories\FE_Automation_RXPhoto\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:363:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-05-09T07:51:22.697Z","pid":13500,"hostname":"NB","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-09T07:51:22.697Z","pid":13500,"hostname":"NB","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-09T07:51:23.068Z","pid":13500,"hostname":"NB","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-05-09T07:51:23.069Z","pid":13500,"hostname":"NB","msg":"End of node method closeAllBrowsers"}

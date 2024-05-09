@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-09T10:50:29.440756" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Suite" source="E:\Repositories\FE_Automation_RXPhoto\Test_Suite">
+<kw name="Define credentials" owner="credentials" type="SETUP">
+<if>
+<branch type="IF" condition="&quot;${ENV}&quot; == &quot;test&quot;">
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-05-09T10:50:35.361802" level="INFO">${baseurl} = https://casino.poker-bet1.com/en/</msg>
+<arg>${baseurl}</arg>
+<arg>https://casino.poker-bet1.com/en/</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-05-09T10:50:35.361802" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-09T10:50:35.346178" elapsed="0.015624"/>
+</branch>
+<status status="PASS" start="2024-05-09T10:50:35.346178" elapsed="0.015624"/>
+</if>
+<status status="PASS" start="2024-05-09T10:50:35.346178" elapsed="0.015624"/>
+</kw>
+<suite id="s1-s1" name="Tests" source="E:\Repositories\FE_Automation_RXPhoto\Test_Suite\Tests">
+<suite id="s1-s1-s1" name="Login" source="E:\Repositories\FE_Automation_RXPhoto\Test_Suite\Tests\Login">
+<suite id="s1-s1-s1-s1" name="Login" source="E:\Repositories\FE_Automation_RXPhoto\Test_Suite\Tests\Login\login.robot">
+<kw name="Start browser" owner="hooks" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-05-09T10:50:35.517838" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "E:\\Repositories\\FE_Automation_RXPhoto\\Result\\browser\\traces\\8e5fc72e-3c18-48b6-9130-8dbd877a4240"}</msg>
+<msg time="2024-05-09T10:50:39.038998" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"E:\\Repositories\\FE_Automation_RXPhoto\\Result\\browser\\traces\\8e5fc72e-3c18-48b6-9130-8dbd877a4240"}</msg>
+<arg>${browser}</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-05-09T10:50:35.501850" elapsed="3.537148"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-05-09T10:50:39.038998" level="INFO">${viewport} = {'width': 1280, 'height': 900}</msg>
+<var>${viewport}</var>
+<arg>{'width': 1280, 'height': 900}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-05-09T10:50:39.038998" elapsed="0.000000"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2024-05-09T10:50:39.054625" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 900,
+    "width": 1280
+  }
+}</msg>
+<msg time="2024-05-09T10:50:39.290611" level="INFO">Successfully created context. </msg>
+<msg time="2024-05-09T10:50:39.290611" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 900, 'width': 1280}}</msg>
+<arg>viewport=${viewport}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2024-05-09T10:50:39.038998" elapsed="0.251613"/>
+</kw>
+<kw name="Grant Permissions" owner="Browser">
+<msg time="2024-05-09T10:50:39.337483" level="INFO">Granted permissions "geolocation"</msg>
+<arg>geolocation</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Grants permissions to the current context.</doc>
+<status status="PASS" start="2024-05-09T10:50:39.290611" elapsed="0.046872"/>
+</kw>
+<kw name="Set Geolocation" owner="Browser">
+<msg time="2024-05-09T10:50:39.337483" level="INFO">{"latitude": 40.173708, "longitude": 73.982263}</msg>
+<msg time="2024-05-09T10:50:39.353107" level="INFO">Geolocation set to: {"latitude":40.173708,"longitude":73.982263}</msg>
+<arg>40.173708</arg>
+<arg>73.982263</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Updated the correct Context's geolocation.</doc>
+<status status="PASS" start="2024-05-09T10:50:39.337483" elapsed="0.015624"/>
+</kw>
+<kw name="Set Browser Timeout" owner="Browser">
+<msg time="2024-05-09T10:50:39.384355" level="INFO">Set timeout to: 40000</msg>
+<arg>40s</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="PASS" start="2024-05-09T10:50:39.368733" elapsed="0.015622"/>
+</kw>
+<status status="PASS" start="2024-05-09T10:50:35.500851" elapsed="3.883504"/>
+</kw>
+<test id="s1-s1-s1-s1-t1" name="Verify login Test" line="14">
+<kw name="Go to login page" owner="hooks" type="SETUP">
+<kw name="New Page" owner="Browser">
+<msg time="2024-05-09T10:51:21.748796" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2024-05-09T10:51:21.748796" level="INFO">See also file:///E:/Repositories/FE_Automation_RXPhoto/Result/playwright-log.txt for additional details.</msg>
+<msg time="2024-05-09T10:51:21.764421" level="FAIL">TimeoutError: page.goto: Timeout 40000ms exceeded.
+Call log:
+  [2m- navigating to "https://casino.poker-bet1.com/en/", waiting until "load"[22m
+
+Tip: Use "Set Browser Timeout" for increasing the timeout.</msg>
+<arg>${baseurl}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2024-05-09T10:50:39.428276" elapsed="42.351768">TimeoutError: page.goto: Timeout 40000ms exceeded.
+Call log:
+  [2m- navigating to "https://casino.poker-bet1.com/en/", waiting until "load"[22m
+
+Tip: Use "Set Browser Timeout" for increasing the timeout.</status>
+</kw>
+<kw name="Check if Element is Visible" owner="hooks">
+<arg>${login['loginHeader']}</arg>
+<status status="NOT RUN" start="2024-05-09T10:51:21.780044" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-09T10:50:39.427278" elapsed="42.384018">TimeoutError: page.goto: Timeout 40000ms exceeded.
+Call log:
+  [2m- navigating to "https://casino.poker-bet1.com/en/", waiting until "load"[22m
+
+Tip: Use "Set Browser Timeout" for increasing the timeout.</status>
+</kw>
+<tag>0001</tag>
+<tag>login</tag>
+<status status="FAIL" start="2024-05-09T10:50:39.384355" elapsed="42.426941">Setup failed:
+TimeoutError: page.goto: Timeout 40000ms exceeded.
+Call log:
+  [2m- navigating to "https://casino.poker-bet1.com/en/", waiting until "load"[22m
+
+Tip: Use "Set Browser Timeout" for increasing the timeout.</status>
+</test>
+<kw name="Suite Teardown" owner="hooks" type="TEARDOWN">
+<kw name="Close Browser" owner="Browser">
+<msg time="2024-05-09T10:51:22.462799" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-09T10:51:21.864211" elapsed="0.598588"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-05-09T10:51:22.462799" level="WARN">------------------------------------------------------------------------------</msg>
+<arg>------------------------------------------------------------------------------</arg>
+<arg>level=WARN</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-05-09T10:51:22.462799" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-09T10:51:21.864211" elapsed="0.598588"/>
+</kw>
+<doc>Login Tests</doc>
+<status status="FAIL" start="2024-05-09T10:50:35.377389" elapsed="47.085410"/>
+</suite>
+<status status="FAIL" start="2024-05-09T10:50:35.361802" elapsed="47.238380"/>
+</suite>
+<status status="FAIL" start="2024-05-09T10:50:35.361802" elapsed="47.238380"/>
+</suite>
+<status status="FAIL" start="2024-05-09T10:50:29.440756" elapsed="53.172662"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">0001</stat>
+<stat pass="0" fail="1" skip="0">login</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test Suite">Test Suite</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">Test Suite.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Login">Test Suite.Tests.Login</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="Login">Test Suite.Tests.Login.Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-09T10:51:22.462799" level="WARN">------------------------------------------------------------------------------</msg>
+</errors>
+</robot>
